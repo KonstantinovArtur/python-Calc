@@ -15,7 +15,12 @@ while ( a != 11 ):
  print ("10.Тангенс")
  print ("11.Выйти из программы")
 
- a = int (input())
+ while True:
+    try:
+        a = int (input("Выберите операцию: "))
+        break
+    except ValueError:
+        print("Символ вводить нельзя, введите число") 
 
  if a == 1:
   while True:
